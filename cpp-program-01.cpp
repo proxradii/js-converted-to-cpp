@@ -9,7 +9,6 @@ float formatPrice(float y) {
     return y;
 }
 
-
 float calculateTax(float x) {
     float tax_rate = 0.08;
     return x * tax_rate;
@@ -33,18 +32,14 @@ float phonePrice(float pPrice) {
     return amount;
 }
 
-
 // main function
 int main() {
-    
     float pPrice;
     float calcTax;
     float finalPrice;
     pPrice = phonePrice(pPrice);
     calcTax = calculateTax(pPrice);
-    
     finalPrice = pPrice + calcTax;
     finalPrice = formatPrice(finalPrice);
-
     return 0;
 }
